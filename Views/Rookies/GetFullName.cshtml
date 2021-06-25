@@ -1,0 +1,11 @@
+@{  
+    Layout = null;  
+}
+@model List<PersonModel> 
+    @{
+        foreach (var i in Model){
+            <li>@i.firstName @i.lastName</li>
+        }
+    }
+
+    
